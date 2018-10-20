@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search</title>
+<link href="https://fonts.googleapis.com/css?family=Vampiro+One" rel="stylesheet">
+<style>
+body { 
+ background-color: black; 
+ color: white; 
+ font-family: 'Vampiro One', cursive;
+}
+.forms { 
+ margin: auto;
+ width: 610px;
+ height: 500px; 
+ padding: 40px;
+ position: relative;
+ border: 25px solid #80ffbf;
+ border-radius: 50px;
+ background-color: black; 
+ 
+}
+input {
+ border-radius: 5px; 
+ font-family: 'Vampiro One', cursive;
+}
+h1 {
+ color:#80ffbf;
+}
+</style>
+</head>
+<body>
+<div class = "forms">
+ <div class="userSearch">
+<h1>Search for user(s):</h1>
+<form action= "/eCommerceApp/Presentation/Process/processUserSearch.php" method = "POST"> 
+	<input name = "userSearch" type="text"><br><br>
+	<input value="Search" type="submit">
+</form>
+</div>
+<br><br><br><br>
+<div class="">
+<h1>Search for product(s):</h1>
+<form action="/eCommerceApp/Presentation/Process/processProductSearch.php" method="POST">
+	<input type ="text" name="productSearch" required><br><br>
+	<input type="submit" value="Search">	
+</form>
+</div>
+</div>
+</body>
+</html>
